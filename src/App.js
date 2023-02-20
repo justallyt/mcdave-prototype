@@ -19,9 +19,9 @@ function App() {
     <div className="App">
            <Routes>
                  <Route path='/' element={<Home />} />
-                 <Route path='/company/' element={<About />} />
-                 <Route path='/expertise/' element={<Expertise />} />
-                 <Route path='/expertise/:id' element={<SingleCapability />} />
+                 <Route path='/about-us/' element={<About />} />
+                 <Route path='/services/' element={<Expertise />} />
+                 <Route path='/service/:id' element={<SingleCapability />} />
                  <Route path='/contact-us/' element={<Contact />} />
            </Routes>
     </div>

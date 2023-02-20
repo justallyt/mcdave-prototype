@@ -2,7 +2,8 @@ import React, { useContext } from 'react'
 import logo from "../../assets/logo2.png"
 import { CgMenuRightAlt } from "react-icons/cg"
 import { sidebarContext } from './sidebarcontext'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
+import { FiPhoneCall } from "react-icons/fi"
 const RegularNavbar = () => {
         const [sidebarStatus, setSidebarStatus] = useContext(sidebarContext)
 
@@ -10,6 +11,8 @@ const RegularNavbar = () => {
                 setSidebarStatus(!sidebarStatus)
         }
 
+        const location = useLocation()
+      const locator = location.pathname.slice(1, 8)
   return (
     <header>
              <div className="inner-row">
@@ -22,26 +25,29 @@ const RegularNavbar = () => {
                                      </div>
                                      <nav>
                                             <ul>
-                                                  <li><NavLink to={'/company/'} activeclassname="active">Company</NavLink></li>
-                                                  <li><NavLink to={'/expertise/'} activeclassname="active" >Expertise</NavLink>
+                                                  <li><NavLink to={'/'}>Home</NavLink></li>
+                                                  <li><NavLink to={'/about-us/'} activeclassname="active">About Us</NavLink></li>
+                                                  <li><NavLink to={'/services/'} className={locator === 'service' ? 'active' : null} activeclassname="active" >Services</NavLink>
                                                         <div className="dropdown show">
                                                                 <ul>
-                                                                        <li><NavLink to={'/expertise/contract-manufacturing/'}>Contract Manufacturing</NavLink></li>
-                                                                        <li><NavLink to={'/expertise/custom-manufacturing/'}>Custom Manufacturing</NavLink></li>
-                                                                        <li><NavLink to={'/expertise/in-house-products/'}>Inhouse Products</NavLink></li>
+                                                                        <li><NavLink to={'/service/contract-manufacturing/'}>Contract Manufacturing</NavLink></li>
+                                                                        <li><NavLink to={'/service/packing-and-repacking/'}>Packing & Repacking</NavLink></li>
+                                                                        <li><NavLink to={'/service/date-coding/'}>Date Coding</NavLink></li>
+                                                                        <li><NavLink to={'/service/promotional-banding/'}>Promotional Banding</NavLink></li>
+                                                                        <li><NavLink to={'/service/sleeving/'}>Sleeving</NavLink></li>
                                                                 </ul>
                                                         </div>
                                                   </li>
-                                                  {/* <li><NavLink to={'/portfolio/'} activeclassname="active">Portfolio</NavLink></li>  */}
+                                                  <li><NavLink to={'/contact-us/'} activeclassname="active">Contact Us</NavLink></li> 
                                             </ul>
                                      </nav>
                              </div>
                              <div className="header-content-right">
-                                       <div className="number">
+                                       {/* <div className="number">
                                                <h3>Call Us: +254 207859680</h3>
-                                       </div>
+                                       </div> */}
                                        <div className="header-btn">
-                                                 <NavLink to={'/contact-us/'}>Request a Quote</NavLink>
+                                                 <button><span><FiPhoneCall /></span> +254 207859680</button>
                                        </div>
                              </div>
 

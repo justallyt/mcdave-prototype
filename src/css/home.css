@@ -1,6 +1,6 @@
 .landing{
     position: relative;
-    height: 92vh;
+    height: 110vh;
 }
 .hero-section{
    width: 100%;
@@ -31,7 +31,7 @@
      left: 0;
      width: 100%;
      height: inherit;
-     background-color: rgba(0,0,0,.4);
+     background-color: rgba(0,0,0,.3);
 }
 
 .hero-section-content{
@@ -43,7 +43,6 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     padding-top: 5%;
 }
 
 .hero-texts h1{
@@ -51,6 +50,14 @@
     font-size: 92px;
     color: var(--text-color);
     text-align: center;
+}
+.hero-texts p{
+      width: 800px;
+      margin: 20px auto;
+      text-align: center;
+      font-size: 20px;
+      color: var(--text-color);
+      line-height: 36px;
 }
 .hero-texts a{
     width: 200px;
@@ -66,14 +73,14 @@
 
 .service-variations{
     position: absolute;
-    bottom: -10%;
+    bottom: -17%;
     width: 100%;
 }
 .service-variations .service-variant-row{
       display: grid;
       grid-template-columns: repeat(3,1fr);
       gap: 2px;
-      width: 1000px;
+      width: 1200px;
       border-radius: 30px;
       overflow: hidden;
       margin: auto;
@@ -83,15 +90,28 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     padding: 40px;
 }
-.service-variant-moja a{
-       padding: 70px 0;
-       display: flex;
-       font-weight: 600;
-       font-size: 22px;
-       color: rgb(0, 28, 0);
-       position: relative;
-       transform-style: preserve-3d;
+.service-variant-moja .icon-section{
+      width: 60px;
+      height: 60px;
+      border: 2px solid var(--main-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+}
+.service-variant-moja .icon-section img{
+     height: 60%;
+     width: 60%;
+     filter: invert(46%) sepia(29%) saturate(972%) hue-rotate(82deg) brightness(99%) contrast(92%);
+}
+.service-variant-moja h3{
+     font-size: 25px;
+     margin: 5px 0;
+}
+.service-variant-moja p{
+     line-height: 25px;
 }
 .service-variant-moja a::before{
     width: 65px;
@@ -120,7 +140,7 @@
 
 /* About Section Styles */
 .about-section{
-    padding: 200px 0px 200px 0px;
+    padding: 200px 0px 100px 0px;
     background: var(--main-color);
     position: relative;
     overflow: hidden;
@@ -155,7 +175,7 @@
 }
 .about-section-left-column{
        border-right: 2px solid var(--semi-gold);
-       width: 95%;
+     
 }
 .about-section-left-column h3{
      text-transform: uppercase;
@@ -166,13 +186,15 @@
 }
 .about-section-left-column h2{
      font-family: "DM Sans";
-     font-size: 52px;
+     font-size: 42px;
      color: var(--text-color);
+     width: 90%;
 }
 .about-section-right-column p{
      font-size: 18px;
      line-height: 32px;
      color: var(--text-white);
+     margin-bottom: 20px;
 }
 
 .about-section-right-column a{
@@ -600,6 +622,9 @@
       .partners-section .inner-row{
            width: 95%;
       }
+      .service-variations .service-variant-row{
+           width: 100%;
+      }
 }
 
 
@@ -619,13 +644,13 @@
     .hero-texts h1{
          font-size: 72px;
     }
+    .hero-texts p{
+           width: 80%;
+    }
     .service-variations{
          bottom: -23%;
     }
-    .service-variations .service-variant-row{
-         width: 600px;
-         grid-template-columns: repeat(1,1fr);
-    }
+
     .service-variant-moja a{
          padding: 40px 0;
          font-size: 18px;
@@ -674,10 +699,18 @@
      .hero-texts h1{
          font-size: 52px;
      }
+     
      .service-variations .service-variant-row{
-          width: 90%;
-          margin: auto
+          margin: auto;
+          grid-template-columns: repeat(1,1fr);
      }
+     .service-variations{
+           position: relative;
+           bottom: -700px;
+     }
+     .about-section{
+          padding-top: 700px;
+    }
      .capability-section .capability-intro{
         grid-template-columns:1fr;
         gap: 30px;

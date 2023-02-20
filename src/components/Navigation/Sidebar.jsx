@@ -2,8 +2,10 @@ import React, { useContext, useEffect, useRef } from 'react'
 import logo from "../../assets/logo.png"
 import {VscClose } from "react-icons/vsc"
 import {sidebarContext} from "./sidebarcontext"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import gsap from 'gsap'
+import { FiPhoneCall } from "react-icons/fi"
+
 const Sidebar = () => {
   const [status, setStatus] = useContext(sidebarContext)
   const sidebarContainer = useRef()
@@ -52,6 +54,8 @@ const Sidebar = () => {
          }
   }, [status])
 
+  const location = useLocation()
+  const locator = location.pathname.slice(1, 8)
   return (
     <div  ref={sidebarContainer} className='sidebar-container'>
            <div ref={overlay} className="sidebar-overlay"></div>
@@ -67,26 +71,26 @@ const Sidebar = () => {
                           </div>
                           <nav>
                                  <ul>
-                                        <li><NavLink to={'/company/'} activeclassname="active">Company</NavLink></li>
-                                        <li className='with__dropdown'><NavLink to={'/expertise/'} activeclassname="active">Expertise</NavLink>
-                                                   <div className="dropdown show">
-                                                                <ul>
-                                                                        <li><NavLink>Contract Manufacturing</NavLink></li>
-                                                                        <li><NavLink>Custom Manufacturing</NavLink></li>
-                                                                        <li><NavLink>Inhouse Products</NavLink></li>
+                                          <li><NavLink to={'/'}>Home</NavLink></li>
+                                           <li><NavLink to={'/about-us/'} activeclassname="active">About Us</NavLink></li>
+                                           <li className='with__dropdown'><NavLink to={'/services/'} className={locator === 'service' ? 'active' : null} activeclassname="active" >Services</NavLink>
+                                                 <div className="dropdown show">
+                                                         <ul>
+                                                                 <li><NavLink to={'/service/contract-manufacturing/'}>Contract Manufacturing</NavLink></li>
+                                                                 <li><NavLink to={'/service/packing-and-repacking/'}>Packing & Repacking</NavLink></li>
+                                                               <li><NavLink to={'/service/date-coding/'}>Date Coding</NavLink></li>
+                                                              <li><NavLink to={'/service/promotional-banding/'}>Promotional Banding</NavLink></li>
+                                                             <li><NavLink to={'/service/sleeving/'}>Sleeving</NavLink></li>
                                                                 </ul>
                                                         </div>
-                                        </li>
-                                        {/* <li><NavLink to={'/portfolio/'} activeclassname="active">Portfolio</NavLink></li>  */}
-                                 </ul>
+                                                  </li>
+                                                  <li><NavLink to={'/contact-us/'} activeclassname="active">Contact Us</NavLink></li> 
+                                            </ul>
                           </nav>
                            <div className="sidebar-extra">
-                                   <div className="number">
-                                          <h3>Call Us: : +254 207859680</h3>
-                                   </div>
-                                   <div className="header-btn">
-                                              <NavLink to={'/contact-us/'}>Request a Quote</NavLink>
-                                     </div>
+                                 <div className="header-btn">
+                                      <button><span><FiPhoneCall /></span> +254 207859680</button>
+                                 </div>
                            </div>
                    </div>
            </div>
