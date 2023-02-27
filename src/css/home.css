@@ -73,12 +73,12 @@
 
 .service-variations{
     position: absolute;
-    bottom: -17%;
+    bottom: -13%;
     width: 100%;
 }
 .service-variations .service-variant-row{
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(4,1fr);
       gap: 2px;
       width: 1200px;
       border-radius: 30px;
@@ -87,9 +87,6 @@
 }
 .service-variant-moja{
      background: white;
-     display: flex;
-     align-items: center;
-     justify-content: center;
      padding: 40px;
 }
 .service-variant-moja .icon-section{
@@ -107,11 +104,14 @@
      filter: invert(46%) sepia(29%) saturate(972%) hue-rotate(82deg) brightness(99%) contrast(92%);
 }
 .service-variant-moja h3{
-     font-size: 25px;
+     font-size: 52px;
+     font-family: "DM Sans";
      margin: 5px 0;
+     color: var(--main-color);
 }
 .service-variant-moja p{
      line-height: 25px;
+     font-size: 18px;
 }
 .service-variant-moja a::before{
     width: 65px;
@@ -140,7 +140,7 @@
 
 /* About Section Styles */
 .about-section{
-    padding: 200px 0px 100px 0px;
+    padding: 250px 0px 150px 0px;
     background: var(--main-color);
     position: relative;
     overflow: hidden;
@@ -176,6 +176,13 @@
 .about-section-left-column{
        border-right: 2px solid var(--semi-gold);
      
+}
+.about-section-left-column p{
+     font-size: 18px;
+     line-height: 32px;
+     color: var(--text-white);
+     margin-top: 20px;
+     width: 90%;
 }
 .about-section-left-column h3{
      text-transform: uppercase;

@@ -12,7 +12,7 @@ const Choose = () => {
                     <div className="choose-section-content">
                              <div className="choose-intro">
                                      <h3>Why Choose Us</h3>
-                                     <h1>We create value through growth and profitability.</h1>
+                                     <h1>We seek to establish a long term relationship with our customers.</h1>
                              </div>
 
                              <div className="choose-section-row">

@@ -1,9 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import video from "../assets/video.mp4"
-import service from "../assets/customer-support.png"
-import innovation from "../assets/innovation.png"
-import quality from "../assets/checked.png"
+import Countup from 'react-countup'
 
 const HeroSection = () => {
   return (
@@ -27,29 +25,26 @@ const HeroSection = () => {
                         <div className="service-variant-row">
                                  <div className="service-variant-moja">
                                          <div className="service-variant-inner">
-                                                  <div className="icon-section">
-                                                         <img src={service} alt="" />
-                                                  </div>
-                                                  <h3>Service</h3>
-                                                  <p>We consistently achieve customer satisfaction by offering products and services on time and in full in the most efficient manner</p>
+                                                  <h3><Countup end={25} duration={3} enableScrollSpy={true} scrollSpyOnce={true}/>+</h3>
+                                                  <p>Manufacturing brands</p>
                                          </div>
                                  </div>
                                  <div className="service-variant-moja">
                                         <div className="service-variant-inner">
-                                                  <div className="icon-section">
-                                                         <img src={quality} alt="" />
-                                                  </div>
-                                                  <h3>Quality</h3>
-                                                  <p>We consistently achieve customer satisfaction by offering products and services of the highest quality, to meet or exceed expectation.</p>
+                                                  <h3><Countup end={400}  enableScrollSpy={true} scrollSpyOnce={true}/>+</h3>
+                                                  <p>Tonnes of Manufactured Product.</p>
                                          </div>
                                  </div>
                                  <div className="service-variant-moja">
                                          <div className="service-variant-inner">
-                                                  <div className="icon-section">
-                                                         <img src={innovation} alt="" />
-                                                  </div>
-                                                  <h3>Sustainability</h3>
-                                                  <p>We are keen on meeting the needs of the present without compromising the ability of future generations</p>
+                                                  <h3><Countup end={16}  duration={3} enableScrollSpy={true} scrollSpyOnce={true}/>+</h3>
+                                                  <p>Consistent Clients</p>
+                                         </div>
+                                 </div>
+                                 <div className="service-variant-moja">
+                                         <div className="service-variant-inner">
+                                                  <h3><Countup end={13} duration={3} enableScrollSpy={true} scrollSpyOnce={true}/>+</h3>
+                                                  <p></p>Years of Experience
                                          </div>
                                  </div>
                         </div>

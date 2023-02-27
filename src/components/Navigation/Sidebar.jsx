@@ -11,7 +11,7 @@ const Sidebar = () => {
   const sidebarContainer = useRef()
   const overlay = useRef()
   const sidebarBox = useRef()
-
+ 
   const removeMenu = () =>{
          setStatus(!status);
   }
@@ -76,11 +76,11 @@ const Sidebar = () => {
                                            <li className='with__dropdown'><NavLink to={'/services/'} className={locator === 'service' ? 'active' : null} activeclassname="active" >Services</NavLink>
                                                  <div className="dropdown show">
                                                          <ul>
-                                                                 <li><NavLink to={'/service/contract-manufacturing/'}>Contract Manufacturing</NavLink></li>
-                                                                 <li><NavLink to={'/service/packing-and-repacking/'}>Packing & Repacking</NavLink></li>
-                                                               <li><NavLink to={'/service/date-coding/'}>Date Coding</NavLink></li>
-                                                              <li><NavLink to={'/service/promotional-banding/'}>Promotional Banding</NavLink></li>
-                                                             <li><NavLink to={'/service/sleeving/'}>Sleeving</NavLink></li>
+                                                                 <li onClick={removeMenu}><NavLink to={'/service/contract-manufacturing/'}>Contract Manufacturing</NavLink></li>
+                                                                 <li onClick={removeMenu}><NavLink to={'/service/packing-and-repacking/'}>Packing & Repacking</NavLink></li>
+                                                               <li onClick={removeMenu}><NavLink to={'/service/date-coding/'}>Date Coding</NavLink></li>
+                                                              <li onClick={removeMenu}><NavLink to={'/service/promotional-banding/'}>Promotional Banding</NavLink></li>
+                                                             <li onClick={removeMenu}><NavLink to={'/service/sleeving/'}>Sleeving</NavLink></li>
                                                                 </ul>
                                                         </div>
                                                   </li>

@@ -21,7 +21,7 @@ const Capabilities = () => {
                                               <div className="small-bubble normal"></div>
                                                <div className="capability-description-side">
                                                         <div className="capability-description-inner">
-                                                                  <h2>Contract Manufacturing</h2>
+                                                                  <h2>Manufacturing</h2>
                                                                   <p>We offer end to end manufacturing services giving you a one-stop shop for products such as sanitizers, toilet cleaners, liquid detergents, hand washing liquid soap, bleach etc.</p>
 
                                                                   <NavLink to={'/service/contract-manufacturing/'}>
@@ -44,7 +44,7 @@ const Capabilities = () => {
                                                         <div className="capability-description-inner">
                                                                   <h2>Packing & Repacking</h2>
 
-                                                                  <p>We tailor our solutions to each client's specific individual need to provide date coding, promotional banding, sleeving, packing and repacking of powder and liquids etc.</p>
+                                                                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque accusantium eius necessitatibus ipsum, labore nam perspiciatis repellat itaque eligendi dolorum odio fuga dolore voluptatum corrupti tempore nostrum harum placeat iusto.</p>
 
                                                                   <NavLink to={'/service/packing-and-repacking/'}>
                                                                        <span>
@@ -59,7 +59,7 @@ const Capabilities = () => {
                                                <div className="capability-description-side">
                                                         <div className="capability-description-inner">
                                                                   <h2>Date Coding</h2>
-                                                                  <p>We are masters in manufacturing and therefore produce quality inhouse products into the market.</p>
+                                                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quod aliquid repellendus voluptatum esse eius, provident nisi. Nobis dolore aut eius molestiae tempora magnam rem, voluptatum sed dignissimos optio nisi.</p>
 
                                                                   <NavLink to={'/service/date-coding/'}>
                                                                        <span>
@@ -81,7 +81,7 @@ const Capabilities = () => {
                                                         <div className="capability-description-inner">
                                                                   <h2>Promotional Banding</h2>
 
-                                                                  <p>We tailor our solutions to each client's specific individual need to provide date coding, promotional banding, sleeving, packing and repacking of powder and liquids etc.</p>
+                                                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, non? Praesentium, corporis. Ratione debitis quidem officia necessitatibus aspernatur eveniet maiores atque ipsam saepe, corrupti perferendis veritatis omnis cupiditate. Accusamus, id.</p>
 
                                                                   <NavLink to={'/service/promotional-banding/'}>
                                                                        <span>
@@ -97,7 +97,7 @@ const Capabilities = () => {
                                                <div className="capability-description-side">
                                                         <div className="capability-description-inner">
                                                                   <h2>Sleeving</h2>
-                                                                  <p>We are masters in manufacturing and therefore produce quality inhouse products into the market.</p>
+                                                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam est officia id praesentium hic tempore inventore eaque facere a soluta reiciendis esse, quis illum repellendus. Aspernatur pariatur perspiciatis sequi quae?</p>
 
                                                                   <NavLink to={'/service/sleeving/'}>
                                                                        <span>

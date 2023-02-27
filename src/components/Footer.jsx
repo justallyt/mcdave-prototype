@@ -29,23 +29,23 @@ const Footer = () => {
                                              <ul>
                                                   <li>
                                                          <span><HiOutlineArrowRight ></HiOutlineArrowRight></span>
-                                                         <NavLink to={'/expertise/contract-manufacturing/'}>Product Manufacture</NavLink>
+                                                         <NavLink to={'/service/contract-manufacturing/'}>Contract Manufacturing</NavLink>
                                                    </li>
                                                    <li>
                                                          <span><HiOutlineArrowRight ></HiOutlineArrowRight></span>
-                                                         <NavLink to={'/expertise/custom-manufacturing/'}> Packing & Repacking</NavLink>
+                                                         <NavLink to={'/service/packing-and-repacking/'}>Packing & Repacking</NavLink>
                                                    </li>
                                                    <li>
                                                          <span><HiOutlineArrowRight ></HiOutlineArrowRight></span>
-                                                         <NavLink to={'/expertise/custom-manufacturing/'}>Date Coding</NavLink>
+                                                         <NavLink to={'/service/date-coding/'}>Date Coding</NavLink>
                                                    </li>
                                                    <li>
                                                          <span><HiOutlineArrowRight ></HiOutlineArrowRight></span>
-                                                         <NavLink to={'/expertise/custom-manufacturing/'}>Promotional Banding</NavLink>
+                                                         <NavLink to={'/service/promotional-banding/'}>Promotional Banding</NavLink>
                                                    </li>
                                                    <li>
                                                          <span><HiOutlineArrowRight ></HiOutlineArrowRight></span>
-                                                         <NavLink to={'/expertise/custom-manufacturing/'}>Sleeving</NavLink>
+                                                         <NavLink to={'/service/sleeving/'}>Sleeving</NavLink>
                                                    </li>
                                              </ul>
                                      </div>
